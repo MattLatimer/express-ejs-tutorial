@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/posts/:id', (req, res) => {
-  var post = post.filter((post) => {
+  var post = posts.filter((post) => {
     return post.id == req.params.id;
   })[0];
 
@@ -46,6 +46,6 @@ app.get('/posts/:id', (req, res) => {
   });
 });
 
-app.listen(8080);
+app.listen(8088);
 
-console.log('Listening on port 8080');
+console.log('Listening on port 8088');
